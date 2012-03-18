@@ -241,10 +241,15 @@ char *alloca ();
 #define INITIAL_MAX_DFAS 1000	/* default maximum number of dfa states */
 #define MAX_DFAS_INCREMENT 1000
 
-#define JAMSTATE -32766		/* marks a reference to the state that always jams */
+// BTO CHANGE
+// #define JAMSTATE -32766		/* marks a reference to the state that always jams */
+#define JAMSTATE -800000 
+
 
 /* Maximum number of NFA states. */
-#define MAXIMUM_MNS 31999
+// BTO CHANGE
+// #define MAXIMUM_MNS 31999
+#define MAXIMUM_MNS 800000
 #define MAXIMUM_MNS_LONG 1999999999
 
 /* Enough so that if it's subtracted from an NFA state number, the result
@@ -336,7 +341,9 @@ char *alloca ();
 /* Number that, if used to subscript an array, has a good chance of producing
  * an error; should be small enough to fit into a short.
  */
-#define BAD_SUBSCRIPT -32767
+// BTO CHANGE
+// #define BAD_SUBSCRIPT -32767
+#define BAD_SUBSCRIPT -800000
 
 /* Absolute value of largest number that can be stored in a short, with a
  * bit of slop thrown in for general paranoia.

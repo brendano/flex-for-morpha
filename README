@@ -1,3 +1,11 @@
+*** This is a patched version of GNU flex-2.5.35 to support compiling "morpha"
+*** morpha is: http://www.informatics.sussex.ac.uk/research/groups/nlp/carroll/morph.html
+*** It's been patched according to the instructions in morpha's README
+*** See "BTO" in the code
+*** -Brendan O'Connor, 2012-03-18
+
+-----------------------------------------------------------------------
+
 This is flex, the fast lexical analyzer generator.
 
 flex is a tool for generating scanners: programs which recognize
